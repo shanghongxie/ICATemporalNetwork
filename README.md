@@ -46,7 +46,7 @@ Time series data collected from a network of random variables are useful for ide
 
 #### Value
 + `estIC`: results from non-Gaussian estimation step. output from estICA.R
-+ `estRts`: residuals after removing non-Gaussian signals
++ `estRts`: R(t),residuals after removing non-Gaussian signals
 + `estS`: independent components S
 + `estUts`: non-Gaussian signals U(t)
 + `estWt`: weight matrix w(t)
