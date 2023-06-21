@@ -29,7 +29,7 @@ Time series data collected from a network of random variables are useful for ide
 
 
  
-- Examples folder contains examples.
+- **Examples** folder contains examples.
    + **genData.R**: generate simulated data
    + **example.R**: an example to implement the method
    + **Sim_Scenario1.R**: simulations of Scenario 1
