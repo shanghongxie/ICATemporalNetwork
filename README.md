@@ -1,5 +1,5 @@
 
-# R package for "Identifying Disease-Associated Biomarker Network Features Through Conditional Graphical Model"
+# R package for "Identifying Temporal Pathways Using Biomarkers in the Presence of Latent Non-Gaussian Components"
 
 <img src="https://img.shields.io/badge/Study%20Status-Results%20Available-yellow.svg" alt="Study Status: Results Available"> 
 
@@ -23,10 +23,37 @@ Time series data collected from a network of random variables are useful for ide
 
 ## Code Instructions
 
-The code for the proposed methodology is included in cNetworkC.cpp and cNetworkR.R. The arguments are described inside the code.
+- The code for the proposed methodology is included in ICATemporalNetwork folder. Please download all the files in the folder to implement the method.
+  + The main function for the method is ICATemporalNet.R and ICATemporalNetBoot.R allows bootstraps.
+  + To use ICATemporalNet.R, it requires estICA.R which estimates the non-Gaussian signals and then removes them from raw data, and temporalNet.R which estimates the temporal network. 
 
-The main function for first stage is LmNetwork_1st and the main function for second stage is EnetLm.
 
-SimGenerate.R includes the code to generate simulation data.
+ 
+- Examples folder contains examples.
+   + genData.R: generate simulated data
+   + example.R: an example to implement the method
+   + Sim_Scenario1.R: simulations of Scenario 1
+   + Sim_Scenario2.R: simulations of Scenario 2
 
-SimSample.R provides an example of simulation study.
+### Main function: ICATemporalNet
+#### Arguments
++ `Yts`: input data, the user must supply a list of Yts, where each elements is a N*K data matrix at time t. N is sample size, K is the number of nodes.
++ `N`: sample size
++ `Ntime`: total number of time points
++ `ncomp`:  maximum number of independent components to be chosen
++  `Ta`: first Ta time points used for estimating temporal network A
++  `Tc`: last Tc time points used for estimating contemporaneous network Gamma
+
+#### Value
++ `estIC`: results from non-Gaussian estimation step. output from estICA.R
++ `estRts`: residuals after removing non-Gaussian signals
++ `estS`: independent components S
++ `estUts`: non-Gaussian signals U(t)
++ `estWt`: weight matrix w(t)
++  `nIC`: number of independent components
++  `A`: temporal network
++  `Gamma`: contemporaneous network
++  `Omega`: covariance matrix of e(t), inverse of Gamma
+
+### The arguments of other functions are described within R files.
+ 
