@@ -23,17 +23,17 @@ Time series data collected from a network of random variables are useful for ide
 
 ## Code Instructions
 
-- The code for the proposed methodology is included in ICATemporalNetwork folder. Please download all the files in the folder to implement the method.
-  + The main function for the method is ICATemporalNet.R and ICATemporalNetBoot.R allows bootstraps.
-  + To use ICATemporalNet.R, it requires estICA.R which estimates the non-Gaussian signals and then removes them from raw data, and temporalNet.R which estimates the temporal network. 
+- The code for the proposed methodology is included in **ICATemporalNetwork** folder. Please download all the files in the folder to implement the method.
+  + The main function for the method is **ICATemporalNet.R** and **ICATemporalNetBoot.R** which allows bootstraps.
+  + To use **ICATemporalNet.R**, it requires **estICA.R** which estimates the non-Gaussian signals and then removes them from raw data, and **temporalNet.R** which estimates the temporal network. 
 
 
  
 - Examples folder contains examples.
-   + genData.R: generate simulated data
-   + example.R: an example to implement the method
-   + Sim_Scenario1.R: simulations of Scenario 1
-   + Sim_Scenario2.R: simulations of Scenario 2
+   + **genData.R**: generate simulated data
+   + **example.R**: an example to implement the method
+   + **Sim_Scenario1.R**: simulations of Scenario 1
+   + **Sim_Scenario2.R**: simulations of Scenario 2
 
 ### Main function: ICATemporalNet
 #### Arguments
