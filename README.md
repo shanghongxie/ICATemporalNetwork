@@ -41,8 +41,8 @@ Time series data collected from a network of random variables are useful for ide
 + `N`: sample size
 + `Ntime`: total number of time points
 + `ncomp`:  maximum number of independent components to be chosen
-+  `Ta`: first Ta time points used for estimating temporal network A
-+  `Tc`: last Tc time points used for estimating contemporaneous network Gamma
++  `Ta`: use t<=Ta time points used for estimating temporal network A
++  `Tc`: ues t>Tc time points used for estimating contemporaneous network Gamma
 
 #### Value
 + `estIC`: results from non-Gaussian estimation step. output from estICA.R
