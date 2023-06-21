@@ -4,8 +4,8 @@ ICATemporalNet <- function(Yts, N, Ntime, node, ncomp, Ta = 5, Tc = ceiling(sqrt
   # N: sample size
   # Ntime: total number of time points
   # ncomp: maximum number of ICs to be chosen
-  # Ta: first Ta time points used for estimating temporal network A
-  # Tc: last Tc time points used for estimating contemporaneous network Gamma
+  # Ta: use t<=Ta time points to estimate  temporal network A
+  # Tc: use t>Tc time points to estimate contemporaneous network Gamma
   
   library(fastICA)
   library(gdata)
