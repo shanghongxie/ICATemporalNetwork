@@ -37,7 +37,7 @@ Time series data collected from a network of random variables are useful for ide
 
 ### Main function: ICATemporalNet
 #### Arguments
-+ `Yts`: input data, the user must supply a list of Yts, where each elements is a N*K data matrix at time t. N is sample size, K is the number of nodes.
++ `Yts`: input data, the user must supply a list of Yts, where each element is a N*K data matrix at time t. N is sample size, K is the number of nodes.
 + `N`: sample size
 + `Ntime`: total number of time points
 + `ncomp`:  maximum number of independent components to be chosen
