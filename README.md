@@ -8,10 +8,10 @@ Time series data collected from a network of random variables are useful for ide
 - Title: **Identifying Temporal Pathways Using Biomarkers in the Presence of Latent Non-Gaussian Components**
   <br/> [Manuscript](https://academic.oup.com/biometrics/article-abstract/80/2/ujae033/7665265): Biometrics 80 (2), ujae033
 
-- Authors: **Shanghong Xie<sup>a</sup> (shanghongxie@gmail.com), Donglin Zeng<sup>b</sup>, and Yuanjia Wang<sup>c</sup>**
+- Authors: **Shanghong Xie<sup>a</sup> (SX2@mailbox.sc.edu), Donglin Zeng<sup>b</sup>, and Yuanjia Wang<sup>c</sup>**
 
 - Affiliations:
-   + 1. **School of Statistics, Southwestern University of Finance and Economics, Chengdu, China**
+   + 1. **Department of Statistics, University of South Carolina, Columbia, SC, USA**
    + 2. **Department of Biostatistics, School of Public Health, University of Michigan, Ann Arbor, MI, USA**
    + 3. **Department of Biostatistics, Mailman School of Public Health, Columbia University, New York, NY, USA**
  
