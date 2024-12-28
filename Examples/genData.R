@@ -27,7 +27,7 @@ genGaussian <- function(N, Ntime, A, Omega, node, cov){
     Rts[[t]] = Rt
     Gts[[t]] = Gt
     
-    Gt = Gt%*%t(trueA)
+    Gt = Gt%*%t(A)
   }
   
   return(list("Rts"=Rts, "Gts"=Gts, "G0" = G0, "ets" = ets))
